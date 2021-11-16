@@ -385,7 +385,7 @@ if(boy.isTouching(treasure4Group)){
 	}
 }
 
-if(back.x > 5000){
+if(back.x < 500){
 	back.x = windowWidth/2
 }
 
@@ -449,6 +449,9 @@ if(back.x > 5000){
 function reset(){
 
 	gameState = PLAY;
+
+	back.x = windowWidth/2+29300;
+	back.y = windowHeight-440;
 
 	boy.x = windowWidth/2-400;
 	boy.y = windowHeight-120;
